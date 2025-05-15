@@ -62,7 +62,7 @@ group :development do
   gem "web-console"
   gem 'guard', '~> 2.19', '>= 2.19.1'
   # Guard::LiveReload automatically reloads your browser when 'view' files are modified.
-  gem 'guard-livereload', '~> 2.5', '>= 2.5.2'
+  gem 'guard-livereload', '~> 2.5', require: false
 end
  
 group :test do

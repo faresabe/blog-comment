@@ -413,7 +413,7 @@ DEPENDENCIES
   capybara
   debug
   guard (~> 2.19, >= 2.19.1)
-  guard-livereload (~> 2.5, >= 2.5.2)
+  guard-livereload (~> 2.5)
   importmap-rails
   jbuilder
   kamal
