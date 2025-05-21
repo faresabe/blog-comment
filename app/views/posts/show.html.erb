@@ -1,7 +1,31 @@
 <% content_for :page_title , @post.title%>
 <section class="section">
 <div class="container">
-  <div class="title"> </h1><div>
-  <div class="content"><h1><%= @post.content%> </h1><div> 
+  <nav class="level">
+  <!--leftside -->
+     <div class="level-left">
+       <p class="level-item">
+         <strong>Actions</strong>
+        </p>
+     </div>
+     <!--rightside-->
+     <div class="level-right">
+      <p class="level-item">
+        <%= link_to "Edit" , edit_post_path(@post), class: "button"%>
+      </p>
+
+      <p class="level-item">
+         <!-- to do : add rails functionals-->
+         <a class="button is-danger ">Delete</a>
+      </p>
+     </div>
+  </nav>
+  <hr />
+    <div class = "content">
+     <%= @post.content%>
+     </div>
+ 
 <div>
 <section>
+
+<section class="comment"></section>
