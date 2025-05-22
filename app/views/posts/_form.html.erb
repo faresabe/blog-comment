@@ -1,0 +1,17 @@
+<div class="section">
+<%= simple_form_for @post do |f|%>
+  <div class="filed">
+     <div class="controller">
+       <%= f.input :title , input_html:{class: 'input'}, wrapper: false, lable_html:{class: 'lable'}%>
+      </div>
+    </div>
+
+    <div class="filed">
+     <div class="controller">
+       <%= f.input :content , input_html:{class: 'textarea'}, wrapper: false, lable_html:{class: 'lable'}%>
+      </div>
+    </div>
+    <br/>
+    <%= f.button :submit, 'update post' , class: "button is-primary"%>
+   <%end%>
+</div>
